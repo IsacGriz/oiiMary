@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TE AMO MARY</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+  <style>
+    #popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #333;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quer casar comigo?</h1>
+  <span>
+    <button id="sim" onclick="showPopup()">SIM</button>
+  </span>
+  <button class="button" onclick="moveButton()">NAO</button>
+
+  <div id="popup">
+    <p>Te amo, MARY!</p>
+    <button onclick="hidePopup()">Fechar</button>
+  </div>
+
+  <script>
+    function moveButton() {
+      const naoButton = document.querySelector('.button');
+      const marginX = Math.floor(Math.random() * 600);
+      const marginY = Math.floor(Math.random() * 600);
+
+      naoButton.style.margin = marginY + 'px ' + marginX + 'px';
+    }
+
+    function showPopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'block';
+    }
+
+    function hidePopup() {
+      const popup = document.getElementById('popup');
+      popup.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

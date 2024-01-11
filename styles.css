@@ -1,0 +1,57 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: 'Lemon', serif;
+  font-size: 24px;
+  color: purple;
+  background-image: url(./frame-do-balao-do-coracao-dos-namorados-com-fundo-aquarela-rosa_53876-114720.avif);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sim, .button {
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  background-color: pink;
+  color: blueviolet;
+  border-radius: 12px;
+  border: 2px solid blueviolet;
+  margin: 10px auto;
+}
+
+body button:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  color: pink;
+  border-color: pink;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#popup p {
+  font-size: 18px;
+}
+
+#popup button {
+  padding: 10px;
+  background-color: pink;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  border-radius: 12px;
+  margin-top: 10px;
+}
